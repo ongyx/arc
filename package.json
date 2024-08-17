@@ -1,5 +1,5 @@
 {
-  "name": "fitbit-clock-template",
+  "name": "arc",
   "version": "0.1.0",
   "private": true,
   "license": "MIT",
@@ -13,9 +13,9 @@
     "tslib": "^2.6.3"
   },
   "fitbit": {
-    "appUUID": "a3004d52-f64a-452f-9763-de46af45b06e",
+    "appUUID": "7b81f305-55fa-415e-b57e-2c98577ed889",
     "appType": "clockface",
-    "appDisplayName": "Fitbit Clock Template",
+    "appDisplayName": "Arc",
     "iconFile": "resources/icon.png",
     "wipeColor": "#ffffff",
     "buildTargets": [

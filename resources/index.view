@@ -1,7 +1,32 @@
 <svg>
-  <text id="time" class="text-base text-middle" y="45%"/>
-  <text id="date" class="text-base text-middle" y="55%"/>
-  <text id="info" class="text-base text-middle" y="65%"/>
+  <section id="background" class="full-size">
+    <rect id="background-color" class="full-size"/>
+  </section>
 
-  <rect id="touch-area" class="touch-area"/>
+  <section id="clock">
+    <!-- For g containers, their transform must be specified here directly. CSS doesn't work. -->
+
+    <!-- Hour markers. -->
+
+    <rect id="twelve" class="marker-major"/>
+    <rect id="three" class="marker-major"/>
+    <rect id="six" class="marker-major"/>
+    <rect id="nine" class="marker-major"/>
+
+    <!-- Clock hands. -->
+
+    <g id="g-minute-hand" transform="translate(50%, 50%)">
+      <rect id="minute-hand"/>
+    </g>
+    <g id="g-second-hand" transform="translate(50%, 50%)">
+      <rect id="second-hand"/>
+    </g>
+    <g id="g-hour-hand" transform="translate(50%, 50%)">
+      <rect id="hour-hand"/>
+    </g>
+
+    <circle id="dot"/>
+  </section>
+
+  <rect id="touch-area" class="touch-area"/>  
 </svg>

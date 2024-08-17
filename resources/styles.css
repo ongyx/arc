@@ -1,6 +1,19 @@
-#touch-area {
+/* General */
+
+.full-size {
+  x: 0;
+  y: 0;
+  width: 100%;
+  height: 100%;
+}
+
+.touch-area {
+  width: 100%;
+  height: 100%;
   pointer-events: all;
 }
+
+/* Text */
 
 .text-base {
   fill: white;
@@ -34,4 +47,76 @@
 
 .text-capitalize {
   text-transform: capitalize;
+}
+
+/* Clock UI */
+
+#clock {
+  x: 10%;
+  y: 10%;
+  width: 80%;
+  height: 80%;
+}
+
+.marker-major {
+  fill: white;
+}
+
+#twelve {
+  x: 50%-2;
+  y: 0%-9;
+  width: 4;
+  height: 12;
+}
+
+#three {
+  x: 100%+9;
+  y: 50%-2;
+  width: 12;
+  height: 4;
+}
+
+#six {
+  x: 50%-2;
+  y: 100%+9;
+  width: 4;
+  height: 12;
+}
+
+#nine {
+  x: 0%-9;
+  y: 50%-2;
+  width: 12;
+  height: 4;
+}
+
+#hour-hand {
+  x: -4;
+  y: 0;
+  width: 8;
+  height: 25%;
+  fill: white;
+}
+
+#minute-hand {
+  x: -3;
+  y: 0;
+  width: 6;
+  height: 50%;
+  fill: white;
+}
+
+#second-hand {
+  x: -1;
+  y: 0;
+  width: 2;
+  height: 49%;
+  fill: red;
+}
+
+#dot {
+  cx: 50%;
+  cy: 50%;
+  r: 4;
+  fill: white;
 }
