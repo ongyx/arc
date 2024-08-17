@@ -1,0 +1,36 @@
+{
+  "name": "fitbit-clock-template",
+  "version": "0.1.0",
+  "private": true,
+  "license": "MIT",
+  "devDependencies": {
+    "@fitbit/sdk": "~6.2.0-pre.1",
+    "@fitbit/sdk-cli": "^1.8.0-pre.11",
+    "feather-icons": "^4.29.2",
+    "fitbit-sdk-types": "^8.0.3",
+    "genversion": "^3.2.0",
+    "prettier": "^3.3.3",
+    "tslib": "^2.6.3"
+  },
+  "fitbit": {
+    "appUUID": "a3004d52-f64a-452f-9763-de46af45b06e",
+    "appType": "clockface",
+    "appDisplayName": "Fitbit Clock Template",
+    "iconFile": "resources/icon.png",
+    "wipeColor": "#ffffff",
+    "buildTargets": [
+      "atlas",
+      "vulcan",
+      "hera",
+      "rhea"
+    ],
+    "i18n": {},
+    "defaultLanguage": "en-US"
+  },
+  "scripts": {
+    "build": "npm run genver && fitbit-build",
+    "debug": "fitbit",
+    "format": "prettier './**/*/*.{ts,tsx,json}' --write",
+    "genver": "genversion --esm common/version.ts"
+  }
+}

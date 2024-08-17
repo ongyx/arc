@@ -1,0 +1,7 @@
+<svg>
+  <text id="time" class="text-base text-middle" y="45%"/>
+  <text id="date" class="text-base text-middle" y="55%"/>
+  <text id="info" class="text-base text-middle" y="65%"/>
+
+  <rect id="touch-area" class="touch-area"/>
+</svg>
